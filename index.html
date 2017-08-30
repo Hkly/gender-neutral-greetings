@@ -4,16 +4,69 @@
     <meta charset="utf-8">
     <title>Hello There</title>
     <link href="https://fonts.googleapis.com/css?family=Abel|Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/styles.css">
   </head>
   <body>
     <div class="splash">
-      <div class="splash-frame">
+
+      <div class="greeting-container">
         <div class="greeting">
-          <h1>Hello</h1>
-          <h2>there</h2>
+          <div class="hello">Hello</div>
+          <div class="there">there</div>
         </div>
       </div>
+
+      <div class="main-content">
+        <div class="lead">
+          When greeting customers
+        </div>
+        <div class="message">
+          instead of saying <span class="typed"></span>...
+        </div>
+        <p>Please consider using gender neutral language. Here are some options:</p>
+        <div class="greeting-options">
+          <span>'Good morning folks'</span>
+          <span>'Hi everyone'</span>
+          <span>'Can I get you all something?'</span>
+          <span>'And for you?'</span>
+          <span>'Thanks friends, have a wonderful night!'</span>
+        </div>
+        <div class="explanation">
+          Why? Shifting to gender neutral language respects and acknowledges the gender identities
+          of all people and removes assumption. Join the movement to be more mindful of language.
+          And if you make a mistake and misgender someone, it's okay, say sorry once and move on.
+          <div class="thanks">
+            Thank you for making an effort!
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        Site maintained by <a href="http://hkly.io">hkly.io</a>
+        |
+        Inspired by <a href="http://tonilatour.com/hello-there">Toni Latour</a>
+      </div>
     </div>
+    <script src="assets/js/typed.js"></script>
+    <script>
+      var strings = [
+        "ladies",
+        "gentlemen",
+        "ma'am",
+        "sir",
+        "girls",
+        "guys"
+      ];
+
+      var options = {
+        strings: strings,
+        loop: true,
+        typeSpeed: 50,
+        backSpeed: 70,
+        backDelay: 2000,
+        showCursor: false
+      }
+      var typed = new Typed(".typed", options);
+    </script>
   </body>
 </html>

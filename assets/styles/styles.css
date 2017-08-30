@@ -1,0 +1,82 @@
+/*** Mini Reset ***/
+* { box-sizing: border-box; }
+
+html, body, div, form, ul, p, h1, h2 {
+ margin: 0;
+ padding: 0;
+}
+
+h1, h2 { font-weight: normal}
+
+img { border: 0; }
+
+/*** shared ***/
+
+a {
+  color: white;
+}
+
+a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+/*** body ***/
+body {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #3a3a3a;
+}
+
+.splash {
+  height: 100vh;
+  color: white;
+  background-color: #c86109;
+  font-family: 'Abel';
+  padding: 70px;
+}
+
+.greeting-container {
+  border: 2px solid white;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.greeting {
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.greeting .hello {
+  font-size: 150px;
+  line-height: 120px;
+}
+
+.greeting .there {
+  font-size: 30px;
+}
+
+.main-content {
+  background-color: white;
+  color: #3a3a3a;
+  width: 75vw;
+  margin: 20px auto 0;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.message {
+  font-size: 40px;
+}
+
+.explanation {
+  border: 1px solid #c86109;
+  margin: 30px;
+  padding: 20px;
+=}
+
+
+.footer {
+  margin-top: 10px;
+}
