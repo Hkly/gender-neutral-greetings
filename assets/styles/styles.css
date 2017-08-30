@@ -11,7 +11,6 @@ h1, h2 { font-weight: normal}
 img { border: 0; }
 
 /*** shared ***/
-
 a {
   color: white;
 }
@@ -27,13 +26,11 @@ body {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   color: #3a3a3a;
+  background-color: #c86109;
 }
 
 .splash {
-  height: 100vh;
   color: white;
-  background-color: #c86109;
-  font-family: 'Abel';
   padding: 70px;
 }
 
@@ -41,6 +38,7 @@ body {
   border: 2px solid white;
   width: 500px;
   margin: 0 auto;
+  font-family: 'Abel';
 }
 
 .greeting {
@@ -60,7 +58,7 @@ body {
 .main-content {
   background-color: white;
   color: #3a3a3a;
-  width: 75vw;
+  max-width: 1100px;
   margin: 20px auto 0;
   padding: 20px;
   font-size: 20px;
@@ -68,15 +66,52 @@ body {
 
 .message {
   font-size: 40px;
+  font-family: 'Abel';
+  margin: 20px 0;
+  border: 2px solid #c86109;
+  padding: 15px 0;
+}
+
+.greeting-options {
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+.greeting-options span {
+  margin: 5px 20px;
+  display: inline-block;
 }
 
 .explanation {
-  border: 1px solid #c86109;
-  margin: 30px;
-  padding: 20px;
-=}
-
+  color: white;
+  background-color: #c86109;
+  margin: 30px 0 0;
+  padding: 30px;
+  letter-spacing: 0.5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ }
 
 .footer {
-  margin-top: 10px;
+  margin: 10px 0;
+}
+
+/*** mobile ***/
+@media only screen and (max-width : 768px) {
+  .splash {
+    padding: 70px 0 0;
+  }
+
+  .greeting-container {
+    width: 75vw;
+    margin-bottom: 70px;
+  }
+
+  .greeting .hello {
+    font-size: 18vw;
+  }
+
+  .message {
+    font-size: 50px;
+  }
 }
